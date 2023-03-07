@@ -1,0 +1,455 @@
+body {
+    background: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsla(239, 10%, 57%, 1);
+    line-height: 1.625rem;
+}
+
+.container {
+    background-color: hsla(0, 0%, 98%, 1);
+    width: 23.4375rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .container {
+        width: 48rem;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .container {
+        width: 90rem;
+    }
+}
+
+.logo {
+    width: 7.4375rem;
+    margin: 3rem auto 3.375rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .logo {
+        margin: 3rem auto 4rem;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .logo {
+        margin: 5rem auto 3.8125rem;
+    }
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    padding-top: 12.5625rem;
+    background-image: url(../assets/desktop/image-hero-left.png), url(../assets/desktop/image-hero-right.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 12.4375rem;
+    background-position: -1.25rem 0, 12.1875rem 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 48rem) {
+    .hero {
+        padding-top: 27.4375rem;
+        background-image: url(../assets/tablet/image-hero.png);
+        background-size: 51.25rem;
+        background-position: -1.625rem 0;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .hero {
+        padding-top: 2.9375rem;
+        background-image: url(../assets/desktop/image-hero-left.png), url(../assets/desktop/image-hero-right.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 24.625rem;
+        background-position: -2rem 0, 67.375rem 0;
+    }
+}
+
+.hero_header {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.75rem;
+    color: hsla(239, 21%, 20%, 1);
+    margin: 0 1.5rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .hero_header {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin: 0 13.375rem;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .hero_header {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin: 0 31.0625rem;
+    }
+}
+
+
+.hero_content {
+    margin: 1.5rem 1.5rem 0;
+}
+
+@media screen and (min-width: 48rem) {
+    .hero_content {
+        margin: 1.5rem 9.6875rem 0;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .hero_content {
+        font-size: 1.125rem;
+        margin: 2.125rem 28.125rem 0;
+    }
+}
+
+.btn {
+    display: block;
+    height: 3.625rem;
+    border: none;
+    border-radius: 1.8125rem;
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 900;
+}
+
+@media screen and (min-width: 48rem) {
+    .btn {
+        display: inline-block;
+    }
+}
+
+.btn_download {
+    width: 12.0625rem;
+}
+
+.btn_download_hero {
+    background-color: hsla(192, 37%, 48%, 1);
+    margin: 2rem auto 0;
+}
+
+@media screen and (min-width: 48rem) {
+    .btn_download_hero {
+        margin-top: 2rem;
+    }
+}
+
+.btn_download_hero span {
+    color: hsla(192, 90%, 77%, 1);
+}
+
+.btn_download_hero:hover {
+    background-color: hsla(192, 54%, 64%, 1);
+    cursor: pointer;
+}
+
+.btn_info {
+    width: 8.6875rem;
+    background-color: hsla(267, 34%, 53%, 1);
+    margin: 1rem auto 0;
+}
+
+.btn_info:hover {
+    background-color: hsla(267, 54%, 71%, 1);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 48rem) {
+    .btn_info {
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+.number {
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: hsla(0, 0%, 98%, 1);
+    border: 1px solid hsla(240, 10%, 57%, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: .9375rem;
+    font-weight: 900;
+    color: hsla(240, 10%, 57%, 1);
+}
+
+.number::before {
+    content: "";
+    display: block;
+    width: .0625rem;
+    height: 5.25rem;
+    background-color: hsla(240, 10%, 57%, 0.25);
+    position: absolute;
+    left: calc(1.75rem - .0625rem);
+    top: -5.25rem;
+}
+
+.number_1 {
+    margin: 9.25rem auto 0;
+}
+
+@media screen and (min-width: 48rem) {
+    .number_1 {
+        margin: 10.25rem auto 0;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .number_1 {
+        margin: 12.125rem auto 0;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1.5rem;
+    column-gap: 1.5625rem;
+    margin: 4rem 1.5rem 0 1.5rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: .6875rem;
+        margin: 4.1875rem 2.4375rem 0;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1.875rem;
+        margin: 4rem 10.3125rem 0;
+    }
+}
+
+.gallery_img {
+    width: 9.4375rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 48rem) {
+    .gallery_img {
+        width: 10.25rem;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .gallery_img {
+        width: 15.9375rem;
+    }
+}
+
+.description {
+    margin: 4rem 1.5rem 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 48rem) {
+    .description {
+        margin: 3rem 6.0625rem 0;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .description {
+        margin: 5rem 28.125rem 0;
+    }
+}
+
+.desc_overline {
+    font-weight: 900;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    color: hsla(192, 37%, 48%, 1);
+}
+
+.desc_header {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.25rem;
+    color: hsla(239, 21%, 20%, 1);
+    margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .desc_header {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        margin: 1rem 4rem 0;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .desc_header {
+        margin: 1rem 2.9375rem 0;
+    }
+}
+
+.desc_lead {
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 90rem) {
+    .desc_lead {
+        font-size: 1.125rem;
+    }
+}
+
+footer {
+    position: relative;
+    background-color: hsla(192, 37%, 48%, 1);
+    margin-top: 11rem;
+    padding-bottom: 4.5rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 48rem) {
+    footer {
+        margin-top: 12rem;
+        padding-bottom: 4.125rem;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    footer {
+        margin-top: 184px;
+        padding: 3.75rem 10.3125rem 6.5rem;
+        text-align: left;
+    }
+}
+
+footer::before {
+    content: "";
+    background-image: url(../assets/mobile/image-footer.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+}
+
+@media screen and (min-width: 48rem) {
+    footer::before {
+        background-image: url(../assets/tablet/image-footer.jpg);
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    footer::before {
+        background-image: url(../assets/desktop/image-footer.jpg);
+    }
+}
+
+.number_2 {
+    position: relative;
+    top: -1.75rem;
+    left: calc(50% - 1.75rem);
+    z-index: 10;
+}
+
+@media screen and (min-width: 90rem) {
+    .number_2 {
+        top: -5.5rem;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .footer_container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.footer_header {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.25rem;
+    color: hsla(0, 0%, 98%, 1);
+    margin: 2.25rem 1.5rem 0;
+}
+
+@media screen and (min-width: 48rem) {
+    .footer_header {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        margin: 2.25rem 9.6875rem 0;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .footer_header {
+        margin: 0;
+        width: 350px;
+        margin-right: 125px;
+    }
+}
+
+.footer_lead {
+    font-size: 1.125rem;
+    color: hsla(0, 0%, 98%, 1);
+    margin: 1.5rem 1.5rem 0;
+}
+
+@media screen and (min-width: 48rem) {
+    .footer_lead {
+        margin: 2rem 6.0625rem 0;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .footer_lead {
+        font-size: 1.125rem;
+        margin: 0;
+        width: 350px;
+        margin-right: 92px;
+    }
+}
+
+.btn_download_footer {
+    position: relative;
+    background-color: hsla(268, 34%, 53%, 1);
+    color: hsla(0, 0%, 100%, 1);
+    margin: 2rem auto 0;
+}
+
+.btn_download_footer span {
+    color: hsla(268, 100%, 86%, 1);
+}
+
+.btn_download_footer:hover {
+    background-color: hsla(268, 55%, 71%, 1);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 48rem) {
+    .btn_download_footer {
+        margin: 2.5rem auto 0;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .btn_download_footer {
+        margin: 0;
+    }
+}
