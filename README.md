@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/anerpeco/meet-landing-page)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://meet-landing-page-anerpeco.vercel.app/)
 
 ## My process
 
